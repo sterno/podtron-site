@@ -1,0 +1,88 @@
+.episodeTitle {
+    font-size: 27px;
+    color: #000;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.subtitle {
+    letter-spacing: 0.428571em;
+    font-family: Cabin,Helvetica,Arial,sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #a8a8a8;
+    line-height: 1.9em;
+}
+
+.episodeTitle a {
+    text-decoration: none;
+    color: #000;
+}
+
+.dateString {
+    font-size: 14px;
+    color: #a8a8a8;
+    line-height: 1.9em;
+}
+
+.episodeContainer {
+    width: 60% !important;
+    padding-bottom: 50;
+    text-align: center;
+}
+
+.episodePageContainer {
+    width: 60% !important;
+    padding-bottom: 50;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.episodeListContainer {
+    padding-bottom: 50;
+    margin-top: 10px;
+}
+
+.navLink {
+    margin-left: 20px;
+    margin-right: 20px;
+    letter-spacing: 2px;
+    font-family: Cabin,Helvetica,Arial,sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 14px !important;
+    color: #000;
+    line-height: 1.5em;
+    padding-left: 15;
+    padding-right: 15;
+    padding-top: 3;
+    padding-bottom: 3;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.footerContainer {
+    width: 100%;
+    margin-top: 70px;
+}
+
+.transcriptLinkContainer {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.transcriptContainer {
+    width: 100%;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.transcriptContainer h3 {
+    text-align: center;
+}
+
+.transcriptButton {}

@@ -1,0 +1,22 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: latest  
+    commands:
+      - n 18
+  pre_build:
+    commands:
+      - echo Installing source NPM dependencies...
+      - npm ci
+  build:
+    commands:
+      - echo Build started on `date`
+      - node --version
+      - npm run build
+      - npm run deploy-codebuild
+cache:
+  paths:
+    - node_modules/**/*
+

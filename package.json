@@ -1,0 +1,49 @@
+{
+  "name": "podtron-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Website for Podtron podcast distribution system",
+  "author": "Steve Stearns",
+  "keywords": [
+    "podcast","ai","podtron","chatgpt","assemblyai"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "typecheck": "tsc --noEmit",
+    "deploy": "gatsby-plugin-s3 deploy",
+    "deploy-codebuild": "./node_modules/.bin/gatsby-plugin-s3 deploy --yes"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.2",
+    "dotenv": "^16.3.1",
+    "gatsby": "^5.12.4",
+    "gatsby-plugin-feed": "^5.12.2",
+    "gatsby-plugin-image": "^3.12.2",
+    "gatsby-plugin-manifest": "^5.12.3",
+    "gatsby-plugin-s3": "^0.4.1",
+    "gatsby-plugin-sharp": "^5.12.2",
+    "gatsby-plugin-sitemap": "^6.12.1",
+    "gatsby-plugin-use-query-params": "^1.0.1",
+    "gatsby-source-filesystem": "^5.12.0",
+    "gatsby-source-rss-feed": "^1.2.2",
+    "gatsby-transformer-sharp": "^5.12.2",
+    "moment": "^2.29.4",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.9.0",
+    "react-dom": "^18.2.0",
+    "react-h5-audio-player": "^3.9.0",
+    "react-markdown": "^8.0.7",
+    "react-router-bootstrap": "^0.26.2",
+    "use-query-params": "^2.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.3.3",
+    "@types/react": "^18.2.14",
+    "@types/react-dom": "^18.2.6",
+    "typescript": "^5.1.6"
+  }
+}
