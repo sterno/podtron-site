@@ -1,49 +1,21 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby Minimal TypeScript Starter
-</h1>
+# Podtron Site
+This is the rather basic website that's used as part of Podtron Pipeline.  To run locally, you need to set up a .env file, 
+but once deployed, everything is passed in via the build environment for the pipeline.  The environment 
+variables you need are:
 
-## 🚀 Quick start
+* CONTENT_BUCKET - the bucket where the site will be hosted
+* GATSBY_RSS_FEED_URL - the RSS feed for the podcast
+* SITE_URL - URL for this website
+* SITE_TITLE - Title for the website
+* SITE_SUBTITLE - Subtitle for the website
+* GATSBY_API_ENDPOINT - the endpoint for the API 
 
-1.  **Create a Gatsby site.**
+As you can see, two of these variables are prefixed with "GATSBY".  This is so that Gatsby (the underlying site framework) can surface
+these values in the website.  Everything else is only needed at build time.
 
-    Use the Gatsby CLI to create a new site, specifying the minimal TypeScript starter.
+## Bootstraping
 
-    ```shell
-    # create a new Gatsby site using the minimal TypeScript starter
-    npm init gatsby -- -ts
-    ```
-
-2.  **Start developing.**
-
-    Navigate into your new site’s directory and start it up.
-
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
-
-3.  **Open the code and start customizing!**
-
-    Your site is now running at http://localhost:8000!
-
-    Edit `src/pages/index.tsx` to see your site update in real-time!
-
-4.  **Learn more**
-
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Tutorials](https://www.gatsbyjs.com/docs/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Guides](https://www.gatsbyjs.com/docs/how-to/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-
-## 🚀 Quick start (Netlify)
-
-Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
-
-[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-minimal-ts)
+There's a bit of a chicken and egg issue to get this running.  When you get started, you'll have no RSS feed because you have no episodes.
+You'll need to get the pipeline running and generating the feed before this is going to work.  So it's probably best to bootstrap with a short
+recording, and then delete that later once you're running.  I haven't totally thought that through because I had episodes when I started this
+whole project.
